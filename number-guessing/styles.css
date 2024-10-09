@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&family=Tiro+Gurmukhi&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Lato;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    width: 50%;
+    margin: auto;
+    border: 1px solid rgb(247, 247, 247);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.secret-number {
+    margin: 25px;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: rgb(175, 206, 219);
+}
+
+.container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.score,
+.max-score {
+    font-size: 0.9rem;
+    margin: 2px 0;
+}
+
+.btn {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: -0.8px;
+    line-height: 18px;
+    min-width: 80px;
+    outline: 0;
+    padding: 0 17px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-check {
+    color: rgb(255, 255, 255);
+    background-color: #06f;
+    border: 2px solid white;
+}
+
+.btn-check:hover,
+.btn-check:active {
+    color: #06f;
+    background-color: #fff;
+    border: 2px solid #06f;
+}
+
+.btn:focus {
+    color: #171e29;
+}
+
+.btn:hover {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+
+.btn:active {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
