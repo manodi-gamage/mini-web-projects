@@ -1,0 +1,107 @@
+/*// Player Config Area */
+
+.overlay-name-config {
+    position: fixed;
+    text-align: center;
+    padding: 1rem 2rem;
+    max-width: 90%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+    left: 6%;
+    right: 6%;
+    top: 30%;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+@media (max-width: 70rem) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 70rem) {
+    .overlay-name-config {
+        left: 25%;
+        right: 25%;
+    }
+}
+
+.overlay-name-config h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.overlay-name-config label {
+    display: block;
+}
+
+.overlay-name-config input {
+    font: inherit;
+    border: 0.5px solid rgb(204, 204, 204);
+    width: 18rem;
+    margin: 0.5rem 0;
+    padding: 0.35rem;
+}
+
+.overlay-name-config label {
+    font-size: 1.1rem;
+}
+
+.overlay-name-config .overlay-btns {
+    margin: 0.5rem 0;
+}
+
+/*// Configuration Area */
+
+.player-info {
+    max-width: 50rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.player-info article {
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+    background-color: rgb(243, 227, 255);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+.player-info h2 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.player-info h3 {
+    margin: 0.5rem 0;
+    color: rgb(94, 4, 168);
+    font-size: 1.6rem;
+}
+
+.player-info .player-symbol {
+    margin: 0.9rem 0;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.error input {
+    border: 1.5px solid rgb(210, 57, 57);
+}
+
+.error label {
+    color: rgb(210, 57, 57);
+}

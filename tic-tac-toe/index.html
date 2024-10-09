@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/game-board.css" />
+        <link rel="stylesheet" href="styles/player-config.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/Base.css" />
+
+        <script src="scripts/player-config.js" defer></script>
+        <script src="scripts/game-play.js" defer></script>
+        <script src="scripts/app.js" defer></script>
+
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <div class="backdrop"></div>
+        <header>
+            <h1>Play Tic, Tac, Toe</h1>
+            <p>
+                Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players who take turns
+                marking the spaces in a three-by-three grid with X or O.
+            </p>
+        </header>
+
+        <main>
+            <aside class="overlay-name-config">
+                <h2>Choose your name</h2>
+                <form>
+                    <label for="player-name-ipt">Player Name</label>
+                    <input type="text" name="player-name" id="player-name-ipt" />
+                    <div class="overlay-btns">
+                        <button type="button" class="btn btn-alt" id="cancel-btn">Cancel</button>
+                        <button type="submit" class="btn" id="confirm-btn">Confirm</button>
+                    </div>
+                </form>
+            </aside>
+
+            <section class="player-info">
+                <div class="cards">
+                    <article id="player-1">
+                        <h2>Player 1</h2>
+                        <h3>PLAYER NAME</h3>
+                        <p class="player-symbol">X</p>
+                        <button class="btn btn-alt" id="player-edit-btn" data-playerid="1">Edit</button>
+                    </article>
+
+                    <article id="player-2">
+                        <h2>Player 2</h2>
+                        <h3>PLAYER NAME</h3>
+                        <p class="player-symbol">O</p>
+                        <button class="btn btn-alt" id="player-edit-btn" data-playerid="2">Edit</button>
+                    </article>
+                </div>
+                <button class="btn" id="new-game-btn">Start New Game</button>
+            </section>
+
+            <section>
+                <aside class="game-over">
+                    <h2>You won, <span class="winner-name">PLAYER NAME</span></h2>
+                    <p>Click "Start New Game" above, to start a new game!</p>
+                </aside>
+
+                <div class="game-board-container">
+                    <p class="player-turn">It's your turn, <span class="active-player">ACTIVE PLAYER</span></p>
+                    <ol class="game-board">
+                        <li id="0"></li>
+                        <li id="1"></li>
+                        <li id="2"></li>
+
+                        <li id="3"></li>
+                        <li id="4"></li>
+                        <li id="5"></li>
+
+                        <li id="6"></li>
+                        <li id="7"></li>
+                        <li id="8"></li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
